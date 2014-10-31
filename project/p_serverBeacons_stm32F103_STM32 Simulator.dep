@@ -1,0 +1,20 @@
+Dependencies for Project 'p_serverBeacons_stm32F103', Target 'STM32 Simulator': (DO NOT MODIFY !)
+F (..\system\stm32f103\startup-gcc.S)(0x52A5F4AA)(-mcpu=cortex-m3 --gdwarf-2 -mthumb-interwork -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x--MD ./startup-gcc.d -o ./startup-gcc.o)
+F (..\include\drivers\ADC.h)(0x52A5F4AA)()
+F (..\include\drivers\GPIO.h)(0x52A5F4AA)()
+F (..\include\drivers\TIMER_1234.H)(0x544B9BD9)()
+F (..\include\drivers\Timer_Systick.h)(0x52A5F4AA)()
+F (..\src\drivers\clock.c)(0x52A5F4AA)(-c -mcpu=cortex-m3 -gdwarf-2 -MD -Wall -O0 -mapcs-frame -mthumb-interwork -I../include/services -I../include/applications -I../include/drivers -I../lib -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD-o ./clock.o)
+I (.\clock.o:)(0x00000000)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x532C55CC)
+F (..\src\drivers\usart.c)(0x52A5F4AA)(-c -mcpu=cortex-m3 -gdwarf-2 -MD -Wall -O0 -mapcs-frame -mthumb-interwork -I../include/services -I../include/applications -I../include/drivers -I../lib -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD-o ./usart.o)
+F (..\include\drivers\LCD.h)(0x544BB1B6)()
+F (..\src\drivers\LCD_4bit.c)(0x544BB294)(-c -mcpu=cortex-m3 -gdwarf-2 -MD -Wall -O0 -mapcs-frame -mthumb-interwork -I../include/services -I../include/applications -I../include/drivers -I../lib -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD-o ./lcd_4bit.o)
+F (..\src\services\s_beaconSignal.c)(0x544BDA28)(-c -mcpu=cortex-m3 -gdwarf-2 -MD -Wall -O0 -mapcs-frame -mthumb-interwork -I../include/services -I../include/applications -I../include/drivers -I../lib -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD-o ./s_beaconsignal.o)
+F (..\src\services\s_serialComm.c)(0x544A7A38)(-c -mcpu=cortex-m3 -gdwarf-2 -MD -Wall -O0 -mapcs-frame -mthumb-interwork -I../include/services -I../include/applications -I../include/drivers -I../lib -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD-o ./s_serialcomm.o)
+I (.\s_serialcomm.o:)(0x00000000)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x.h)(0x532C55CC)
+F (..\src\applications\main.c)(0x544BA7D1)(-c -mcpu=cortex-m3 -gdwarf-2 -MD -Wall -O0 -mapcs-frame -mthumb-interwork -I../include/services -I../include/applications -I../include/drivers -I../lib -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD-o ./main.o)
+F (..\include\applications\global.h)(0x544BDB02)()
+F (..\src\applications\application.c)(0x544BB2B7)(-c -mcpu=cortex-m3 -gdwarf-2 -MD -Wall -O0 -mapcs-frame -mthumb-interwork -I../include/services -I../include/applications -I../include/drivers -I../lib -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD-o ./application.o)
+F (..\src\applications\application.h)(0x544BAA59)()

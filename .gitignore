@@ -1,2 +1,6 @@
 #ignore all tmp files
 *~
+#ignore all object files
+*.o
+#ignore the compilator
+ignore CodeSourcery
