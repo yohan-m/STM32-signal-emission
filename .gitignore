@@ -2,5 +2,5 @@
 *~
 #ignore all object files
 *.o
-#ignore the compilator
-ignore CodeSourcery
+#ignore all debug files
+*.d
