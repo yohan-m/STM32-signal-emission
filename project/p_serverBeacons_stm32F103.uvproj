@@ -390,14 +390,14 @@
               <FilePath>..\include\applications\global.h</FilePath>
             </File>
             <File>
-              <FileName>application.c</FileName>
+              <FileName>Emission.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\src\applications\application.c</FilePath>
+              <FilePath>..\src\applications\Emission.c</FilePath>
             </File>
             <File>
-              <FileName>application.h</FileName>
+              <FileName>Emission.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\src\applications\application.h</FilePath>
+              <FilePath>..\src\applications\Emission.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -787,14 +787,14 @@
               <FilePath>..\include\applications\global.h</FilePath>
             </File>
             <File>
-              <FileName>application.c</FileName>
+              <FileName>Emission.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\src\applications\application.c</FilePath>
+              <FilePath>..\src\applications\Emission.c</FilePath>
             </File>
             <File>
-              <FileName>application.h</FileName>
+              <FileName>Emission.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\src\applications\application.h</FilePath>
+              <FilePath>..\src\applications\Emission.h</FilePath>
             </File>
           </Files>
         </Group>
