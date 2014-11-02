@@ -30,7 +30,7 @@
 #include "s_beaconSignal.h"
 #include "s_serialComm.h"
 #include "GUI.h"
-#include "application.h"
+#include "Emission.h"
 #include "LCD.h"
 
 
@@ -41,13 +41,13 @@
 ******************************************************************************/ 
 
 /** Systick period in [us]*/
-#define SYSTICK_PERIOD 2000.0 //100 ms
+#define SYSTICK_PERIOD 1000.0 //100 ms
 
 /** PWM On period in us **/
-#define PwmOnPeriod 1*SYSTICK_PERIOD
+#define PwmOnPeriod 50*SYSTICK_PERIOD
 
 /** PWM Off period in us **/
-#define PwmOffPeriod 49*SYSTICK_PERIOD
+#define PwmOffPeriod 50*SYSTICK_PERIOD
 
 /** priority for beacons task */
 #define PRIORITY_BEACONS 1

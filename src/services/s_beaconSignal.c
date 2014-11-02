@@ -5,9 +5,9 @@
  *      This file contains the SERVICE beacon signal emission.
  *			Initializes, configurates and activates timers with PWM mode. 
  *
- * @author Martin
- * @version 0.0.1
- * @date 08 Nov 2013
+ * @author Guillaume
+ * @version 1.0.0
+ * @date 02 Oct 2014
  */
 
 
@@ -59,10 +59,10 @@ char PwmOffNumberPeriodSystick = PwmOffPeriod/SYSTICK_PERIOD;
 void s_beaconSignal_initialization(void)
 {	
 	// GPIOs configuration
-	GPIO_Configure(GPIOA, 8, OUTPUT, ALT_PPULL); 		// PWM, TIM1_CH1
-	GPIO_Configure(GPIOA, 0, OUTPUT, ALT_PPULL); 		// PWM, TIM2_CH2 
-	GPIO_Configure(GPIOA, 6, OUTPUT, ALT_PPULL); 		// PWM, TIM3_CH1 
-	GPIO_Configure(GPIOB, 6, OUTPUT, ALT_PPULL); 		// PWM, TIM4_CH2 
+	GPIO_Configure(GPIOA, 8, OUTPUT, ALT_PPULL); 		// PWM1, TIM1_CH1
+	GPIO_Configure(GPIOA, 0, OUTPUT, ALT_PPULL); 		// PWM2, TIM2_CH2 
+	GPIO_Configure(GPIOA, 6, OUTPUT, ALT_PPULL); 		// PWM3, TIM3_CH1 
+	GPIO_Configure(GPIOB, 6, OUTPUT, ALT_PPULL); 		// PWM4, TIM4_CH2 
 	
 	GPIO_Configure(GPIOB, 8, OUTPUT, OUTPUT_PPULL);	// LED (On/Off)
 	GPIO_Configure(GPIOB, 9, OUTPUT, OUTPUT_PPULL);	// LED (On/Off)
@@ -192,4 +192,20 @@ void s_beaconSignal_zero(void)
 	PWM_Valeur(TIM3,1)=(resolution_pwm3*DUTYCYCLE_0);
 	PWM_Valeur(TIM4,1)=(resolution_pwm4*DUTYCYCLE_0);
 	
+}
+
+/**
+ *******************************************************************************
+ * GetStateTampButton
+ *
+ *			Notice the user if the "tamp" button is pressed
+ * 			
+ * @param void
+ * @return 0 if tamp is activated
+ * @return 1 it tamp is not activated
+ ******************************************************************************/
+
+int GetStateTampButton()
+{
+	return GPIO_Read(GPIOC,13);
 }

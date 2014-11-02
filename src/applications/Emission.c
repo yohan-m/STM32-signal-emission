@@ -1,10 +1,24 @@
+/**
+ * @file Emission.h
+ * @brief Signal emission file header
+ *
+ *      This file contains the emission application.
+ *			Initializes, configurates and the periodic emission of the four transducers. 
+ *
+ * @author Guillaume
+ * @version 1.0.0
+ * @date 02 Oct 2014
+ */
+
+
+
 /******************************************************************************
 * 
 *   INCLUDED FILES
 *
 ******************************************************************************/
 
-#include "application.h"
+#include "Emission.h"
 
 /******************************************************************************
 *
@@ -19,7 +33,7 @@ State_APP prev_state = APP_OFF;
 
 /******************************************************************************
 *
-*   FUNCTIONS
+*   PUBLIC FUNCTIONS
 *
 ******************************************************************************/
 
@@ -128,6 +142,43 @@ char app_initialization(void)
 	return 0;
 }
 
+/**
+ *******************************************************************************
+ * UpdateStateMachineEmission
+ *
+ * Update the emission state machine when the button "Tamp" is pressed			
+ *
+ * 
+ * @param void
+ * @return void
+ ******************************************************************************/
 
+
+
+void UpdateStateMachineEmission()
+{
+	static int EmmissionOn = 0;
+	
+	if (!GetStateTampButton()) 
+		{
+			if (EmmissionOn == 1)
+				{
+					EmmissionOn = 0;
+					state_pwm = PWM_RESET;
+					
+					SysTick_On;
+					SysTick_Enable_IT;
+				}
+			else
+				{
+					EmmissionOn = 1;
+					state_pwm = PWM_PULSE;
+					
+					SysTick_On;
+					SysTick_Enable_IT;
+				}
+			while (!GetStateTampButton()); //Waiting for the user to take off his finger of the button
+		}
+}
 
 

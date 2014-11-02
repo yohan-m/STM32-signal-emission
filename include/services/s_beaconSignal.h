@@ -74,6 +74,6 @@ void s_beaconSignal_initialization(void);
 void s_beaconSignal_emission_PWM(void);	
 void s_beaconSignal_reset(void);
 void s_beaconSignal_zero(void);
-
+int GetStateTampButton();
 
 #endif					/* S_BEACONSIGNAL_H */

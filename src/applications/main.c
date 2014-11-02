@@ -29,33 +29,11 @@
 
 int main (void)
 {	
-	int EmmissionOn = 0;
-	// Initialization
 	app_initialization();
 	
-	// Infinity loop 
 	while(1)
 	{
-		if (!GPIO_Read(GPIOC,13)) 
-		{
-			if (EmmissionOn == 1)
-			{
-				EmmissionOn = 0;
-				state_pwm = PWM_RESET;
-				
-				SysTick_On;
-				SysTick_Enable_IT;
-			}
-			else
-			{
-				EmmissionOn = 1;
-				state_pwm = PWM_PULSE;
-				
-				SysTick_On;
-				SysTick_Enable_IT;
-			}
-			while (!GPIO_Read(GPIOC,13));
-		}
+		UpdateStateMachineEmission();
 	}
 		
 	return 0;

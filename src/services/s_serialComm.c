@@ -172,3 +172,4 @@ char s_serialComm_sendString(char string[])
 	GPIO_Clear(GPIOA,11);	// set OFF 
 	return code_Erreur;
 }
+
