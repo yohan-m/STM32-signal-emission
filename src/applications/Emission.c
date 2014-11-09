@@ -127,14 +127,11 @@ char app_initialization(void)
 	// Clock's configuration
 	CLOCK_Configure();
 
-	//lcd_init();
-	//lcd_clear();
-	
 	// service initialization
 	s_beaconSignal_initialization();
 	
 	// Systick clock configuration
-	Systick_Period(SYSTICK_PERIOD); //[us]   // Useless variable ? Never used 
+	Systick_Period(SYSTICK_PERIOD); //[us]  
 	Systick_Prio_IT(PRIORITY_BEACONS, app_commBeacons); // Priority 2 for Emission_PWM, PRIORITY_BEACONS = 2
 	
 	state_pwm = PWM_RESET;

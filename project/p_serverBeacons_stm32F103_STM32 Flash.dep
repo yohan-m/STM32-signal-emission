@@ -79,7 +79,7 @@ I (..\system\system_stm32f10x.h)(0x52A5E69A)
 I (..\include\drivers\gpio.h)(0x52A5E69A)
 I (..\include\drivers\usart.h)(0x52A5E69A)
 I (..\include\services\s_serialComm.h)(0x5443ECCD)
-F (..\src\applications\main.c)(0x545627DF)(-c -mcpu=cortex-m3 -mthumb -gdwarf-2 -MD -Wall -O -mapcs-frame -mthumb-interwork -I../include/drivers -I../include/services -I../include/applications -I../src/drivers -I../src/services -I../src/applications -I../system/stm32f103 -I../system -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD-o ./output/main.o)
+F (..\src\applications\main.c)(0x54562811)(-c -mcpu=cortex-m3 -mthumb -gdwarf-2 -MD -Wall -O -mapcs-frame -mthumb-interwork -I../include/drivers -I../include/services -I../include/applications -I../src/drivers -I../src/services -I../src/applications -I../system/stm32f103 -I../system -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD-o ./output/main.o)
 I (..\include\applications\global.h)(0x545614A7)
 I (..\system\stm32f10x.h)(0x52A5E69A)
 I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x532C4C22)
