@@ -11339,16 +11339,16 @@ type RDH, grid 15 mm</description>
 <instance part="2_TRANSDUCER" gate="G$1" x="93.98" y="45.72"/>
 <instance part="3_TRANSDUCER" gate="G$1" x="93.98" y="7.62"/>
 <instance part="4_TRANSDUCER" gate="G$1" x="91.44" y="-27.94"/>
-<instance part="R1" gate="G$1" x="43.18" y="73.66" rot="R90"/>
+<instance part="R1" gate="G$1" x="48.26" y="66.04" rot="R180"/>
 <instance part="R2" gate="G$1" x="43.18" y="60.96" rot="R90"/>
-<instance part="R3" gate="G$1" x="43.18" y="35.56" rot="R90"/>
+<instance part="R3" gate="G$1" x="58.42" y="27.94" rot="R180"/>
 <instance part="R4" gate="G$1" x="43.18" y="22.86" rot="R90"/>
 <instance part="C1" gate="G$1" x="-96.52" y="38.1"/>
 <instance part="C2" gate="G$1" x="-58.42" y="38.1"/>
 <instance part="SUPPLY" gate="G$1" x="-157.48" y="88.9"/>
-<instance part="R5" gate="G$1" x="43.18" y="-2.54" rot="R90"/>
+<instance part="R5" gate="G$1" x="53.34" y="-10.16" rot="R180"/>
 <instance part="R6" gate="G$1" x="43.18" y="-15.24" rot="R90"/>
-<instance part="R7" gate="G$1" x="43.18" y="-38.1" rot="R90"/>
+<instance part="R7" gate="G$1" x="53.34" y="-45.72" rot="R180"/>
 <instance part="R8" gate="G$1" x="43.18" y="-50.8" rot="R90"/>
 <instance part="U$2" gate="G$1" x="-104.14" y="93.98" rot="R270"/>
 <instance part="REG" gate="1" x="-76.2" y="40.64"/>
@@ -11362,15 +11362,12 @@ type RDH, grid 15 mm</description>
 <pinref part="PWM1-2" gate="A" pin="OUT"/>
 <wire x1="58.42" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="81.28" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="66.04" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
 <junction x="66.04" y="81.28"/>
 <label x="73.66" y="81.28" size="1.778" layer="95"/>
 <wire x1="66.04" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="66.04" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="1_TRANSDUCER" gate="G$1" pin="3"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<junction x="43.18" y="66.04"/>
+<wire x1="53.34" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -11516,50 +11513,40 @@ type RDH, grid 15 mm</description>
 </net>
 <net name="IN2" class="0">
 <segment>
-<wire x1="43.18" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="27.94" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="PWM1-2" gate="B" pin="OUT"/>
 <wire x1="63.5" y1="43.18" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
 <junction x="63.5" y="43.18"/>
 <label x="68.58" y="43.18" size="1.778" layer="95"/>
 <wire x1="63.5" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="27.94" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="2_TRANSDUCER" gate="G$1" pin="3"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<junction x="43.18" y="27.94"/>
 </segment>
 </net>
 <net name="IN3" class="0">
 <segment>
 <pinref part="PWM3-4" gate="A" pin="OUT"/>
 <wire x1="58.42" y1="5.08" x2="63.5" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-10.16" x2="63.5" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-10.16" x2="63.5" y2="5.08" width="0.1524" layer="91"/>
 <junction x="63.5" y="5.08"/>
 <label x="71.12" y="5.08" size="1.778" layer="95"/>
 <wire x1="63.5" y1="5.08" x2="88.9" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-10.16" x2="43.18" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="3_TRANSDUCER" gate="G$1" pin="3"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<junction x="43.18" y="-10.16"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="-10.16" x2="58.42" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN4" class="0">
 <segment>
 <pinref part="PWM3-4" gate="B" pin="OUT"/>
 <wire x1="58.42" y1="-30.48" x2="63.5" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-45.72" x2="63.5" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-45.72" x2="63.5" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="63.5" y="-30.48"/>
 <label x="71.12" y="-30.48" size="1.778" layer="95"/>
 <wire x1="63.5" y1="-30.48" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-45.72" x2="43.18" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="4_TRANSDUCER" gate="G$1" pin="3"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<junction x="43.18" y="-45.72"/>
+<wire x1="58.42" y1="-45.72" x2="63.5" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM1" class="0">
@@ -11666,24 +11653,39 @@ type RDH, grid 15 mm</description>
 <segment>
 <pinref part="PWM1-2" gate="A" pin="IN-"/>
 <pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="66.04" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<junction x="43.18" y="66.04"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="PWM1-2" gate="B" pin="IN-"/>
 <pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="PWM1-2" gate="B" pin="IN-"/>
+<wire x1="43.18" y1="27.94" x2="43.18" y2="40.64" width="0.1524" layer="91"/>
+<junction x="43.18" y="27.94"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="PWM3-4" gate="A" pin="IN-"/>
 <pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="-10.16" x2="43.18" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="PWM3-4" gate="A" pin="IN-"/>
+<wire x1="43.18" y1="-10.16" x2="43.18" y2="2.54" width="0.1524" layer="91"/>
+<junction x="43.18" y="-10.16"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="PWM3-4" gate="B" pin="IN-"/>
+<wire x1="43.18" y1="-33.02" x2="43.18" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="-45.72" x2="48.26" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<junction x="43.18" y="-45.72"/>
 </segment>
 </net>
 </nets>

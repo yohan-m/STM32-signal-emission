@@ -11294,6 +11294,8 @@ type RDH, grid 15 mm</description>
 <segment>
 <wire x1="-104.14" y1="-30.48" x2="-96.52" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-104.14" y="-30.48" size="1.778" layer="95" rot="R180"/>
+<pinref part="MCBSTM1" gate="G$1" pin="PA8"/>
+<junction x="-96.52" y="-30.48"/>
 </segment>
 </net>
 <net name="PWM2" class="0">
@@ -11305,6 +11307,8 @@ type RDH, grid 15 mm</description>
 <segment>
 <wire x1="-96.52" y1="-50.8" x2="-104.14" y2="-50.8" width="0.1524" layer="91"/>
 <label x="-104.14" y="-50.8" size="1.778" layer="95" rot="R180"/>
+<pinref part="MCBSTM1" gate="G$1" pin="PA0"/>
+<junction x="-96.52" y="-50.8"/>
 </segment>
 </net>
 <net name="PWM3" class="0">
@@ -11314,8 +11318,11 @@ type RDH, grid 15 mm</description>
 <label x="35.56" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-93.98" y1="-35.56" x2="-104.14" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="-35.56" x2="-96.52" y2="-35.56" width="0.1524" layer="91"/>
 <label x="-104.14" y="-35.56" size="1.778" layer="95" rot="R180"/>
+<pinref part="MCBSTM1" gate="G$1" pin="PA6"/>
+<junction x="-96.52" y="-35.56"/>
+<wire x1="-96.52" y1="-35.56" x2="-104.14" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM4" class="0">
@@ -11327,6 +11334,8 @@ type RDH, grid 15 mm</description>
 <segment>
 <wire x1="-104.14" y1="-81.28" x2="-96.52" y2="-81.28" width="0.1524" layer="91"/>
 <label x="-104.14" y="-81.28" size="1.778" layer="95" rot="R180"/>
+<pinref part="MCBSTM1" gate="G$1" pin="PB6"/>
+<junction x="-96.52" y="-81.28"/>
 </segment>
 </net>
 <net name="V5" class="0">
