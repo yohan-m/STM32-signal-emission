@@ -134,7 +134,10 @@ char app_initialization(void)
 	Systick_Period(SYSTICK_PERIOD); //[us]  
 	Systick_Prio_IT(PRIORITY_BEACONS, app_commBeacons); // Priority 2 for Emission_PWM, PRIORITY_BEACONS = 2
 	
-	state_pwm = PWM_RESET;
+	state_pwm = PWM_PULSE;
+					
+	SysTick_On;
+	SysTick_Enable_IT;
 		
 	return 0;
 }
@@ -154,7 +157,7 @@ char app_initialization(void)
 
 void UpdateStateMachineEmission()
 {
-	static int EmmissionOn = 0;
+	static int EmmissionOn = 1;
 	
 	if (!GetStateTampButton()) 
 		{
