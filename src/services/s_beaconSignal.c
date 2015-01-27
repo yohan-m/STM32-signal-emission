@@ -1,13 +1,10 @@
-/**
- * @file s_beaconSignal.c
- * @brief Beacon signal emission file core
+/*----------------------------------------------------------------------------
+ * Name:    s_beaconSignal.c
+ * Purpose: This file contains the SERVICE beacon signal emission.
+ *					Initializes, configurates and activates timers with PWM mode.  
  *
- *      This file contains the SERVICE beacon signal emission.
- *			Initializes, configurates and activates timers with PWM mode. 
- *
- * @author Guillaume
- * @version 1.0.0
- * @date 02 Oct 2014
+ * Version: V1.0
+ * Ahthor: G.Fauxpoint
  */
 
 
@@ -34,30 +31,23 @@ vu16 resolution_pwm4;
 /** pwm state */
 State_PWM state_pwm = PWM_ZERO;
 
-/** ???*/
-char PwmOnNumberPeriodSystick = PwmOnPeriod/SYSTICK_PERIOD;
-char PwmOffNumberPeriodSystick = PwmOffPeriod/SYSTICK_PERIOD;
-
 /******************************************************************************
 *
 *   PRIVATE FUNCTIONS
 *
 ******************************************************************************/
 
+void enableSystick()
+{
+	SysTick_On;
+	SysTick_Enable_IT;
+}
 
-/**
- *******************************************************************************
- * s_beaconSignal_initialization
- *
- *      Configure all clocks and registers.
- *			Initialize all GPIOs and Timers
- * 			
- * @param void
- * @return void
- ******************************************************************************/
-
-void s_beaconSignal_initialization(void)
+void s_beaconSignal_initialization(void (*function) (void))
 {	
+	// Clock's configuration
+	CLOCK_Configure();	
+	
 	// GPIOs configuration
 	GPIO_Configure(GPIOA, 8, OUTPUT, ALT_PPULL); 		// PWM1, TIM1_CH1
 	GPIO_Configure(GPIOA, 0, OUTPUT, ALT_PPULL); 		// PWM2, TIM2_CH2 
@@ -86,19 +76,16 @@ void s_beaconSignal_initialization(void)
 	resolution_pwm3 = resolution_pwm2 + 1;	// (ARRresolution + 1)
 	resolution_pwm4 = PWM_Init(TIM4, 1, FPWM4);	// timer1 channel2 configuration : mode PWM with Fpwm 
 	resolution_pwm4 = resolution_pwm4 + 1;	// (ARRresolution + 1)
+	
+	
+	// Systick clock configuration
+	Systick_Period(SYSTICK_PERIOD); //[us]  
+	Systick_Prio_IT(PRIORITY_BEACONS, function); // Priority 2 for Emission_PWM, PRIORITY_BEACONS = 2
+	
+	state_pwm = PWM_PULSE;
+					
+	enableSystick();
 }
-
-
-/**
- *******************************************************************************
- * s_beaconSignal_emission_PWM
- *
- *			Emission PWM to every Beacon for a pre-defined period of time
- * 			Mode ON on each GPIO (output with PWM signal)
- * 			
- * @param int time of emission in [ms]
- * @return void
- ******************************************************************************/
  
 void s_beaconSignal_emission_PWM()		
 {
@@ -109,7 +96,7 @@ void s_beaconSignal_emission_PWM()
 	switch (state_pwm)
 	{
 		case PWM_PULSE:
-		s_beaconSignal_reset();
+		s_beaconSignal_pulse();
 		
 		GPIO_Set(GPIOB,11);
 		GPIO_Clear(GPIOB,12);
@@ -153,18 +140,7 @@ void s_beaconSignal_emission_PWM()
 	}
 }	
 
-
-/**
- *******************************************************************************
- * s_beaconSignal_reset
- *
- *			Reset initial conditions in beaconSignal service
- *			State PWM in mode ZERO
- *			LED ON
- * 			
- ******************************************************************************/
- 
-void s_beaconSignal_reset(void)
+void s_beaconSignal_pulse(void)
 {
 	// PWM emission before the first Systick interruption
 	PWM_Valeur(TIM1,1)=(resolution_pwm1*DUTYCYCLE_50);
@@ -173,17 +149,6 @@ void s_beaconSignal_reset(void)
 	PWM_Valeur(TIM4,1)=(resolution_pwm4*DUTYCYCLE_50);
 }
 
-
-/**
- *******************************************************************************
- * s_beaconSignal_pwm
- *
- *			beaconSignal service in mode ZERO
- *			State PWM in mode PULSE for next switch
- *			LED OFF
- * 			
- ******************************************************************************/
- 
 void s_beaconSignal_zero(void)
 {
 	// PWM emission before the first Systick interruption
@@ -194,16 +159,6 @@ void s_beaconSignal_zero(void)
 	
 }
 
-/**
- *******************************************************************************
- * GetStateTampButton
- *
- *			Notice the user if the "tamp" button is pressed
- * 			
- * @param void
- * @return 0 if tamp is activated
- * @return 1 it tamp is not activated
- ******************************************************************************/
 
 int GetStateTampButton()
 {

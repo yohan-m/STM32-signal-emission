@@ -1,0 +1,119 @@
+\hypertarget{s__serial_comm_8c}{\section{src/services/s\+\_\+serial\+Comm.c File Reference}
+\label{s__serial_comm_8c}\index{src/services/s\+\_\+serial\+Comm.\+c@{src/services/s\+\_\+serial\+Comm.\+c}}
+}
+
+
+Serial Communication Protocol file core.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}gpio.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}usart.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}s\+\_\+serial\+Comm.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{s__serial_comm_8c_a4f674a4016a8f0b3e2dabadc424d554a}{s\+\_\+serial\+Comm\+\_\+it\+\_\+function} (void)
+\item 
+char \hyperlink{s__serial_comm_8c_ac8959b47a04b21ff73e437840e817b9f}{s\+\_\+serial\+Comm\+\_\+initialization} (void($\ast$ptr\+Function)(char))
+\item 
+char \hyperlink{s__serial_comm_8c_acd545bd19769722c9a852c96e4f915e7}{s\+\_\+serial\+Comm\+\_\+send\+Char} (char c)
+\item 
+char \hyperlink{s__serial_comm_8c_abe4e8621b3d78e298fc0a064c675db51}{s\+\_\+serial\+Comm\+\_\+send\+String} (char string\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Serial Communication Protocol file core. 
+
+This file contains the S\+E\+R\+V\+I\+C\+E serial communication R\+S232 (U\+A\+R\+T). Initialization, configuration and send/receive mode.
+
+Last modification \+: 18 Nov 2013
+
+\begin{DoxyAuthor}{Author}
+Martin 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08 Nov 2013 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{s__serial_comm_8c_ac8959b47a04b21ff73e437840e817b9f}{\index{s\+\_\+serial\+Comm.\+c@{s\+\_\+serial\+Comm.\+c}!s\+\_\+serial\+Comm\+\_\+initialization@{s\+\_\+serial\+Comm\+\_\+initialization}}
+\index{s\+\_\+serial\+Comm\+\_\+initialization@{s\+\_\+serial\+Comm\+\_\+initialization}!s\+\_\+serial\+Comm.\+c@{s\+\_\+serial\+Comm.\+c}}
+\subsubsection[{s\+\_\+serial\+Comm\+\_\+initialization}]{\setlength{\rightskip}{0pt plus 5cm}char s\+\_\+serial\+Comm\+\_\+initialization (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(char)}]{ptr\+Function}
+\end{DoxyParamCaption}
+)}}\label{s__serial_comm_8c_ac8959b47a04b21ff73e437840e817b9f}
+s\+\_\+serial\+Comm\+\_\+initialization \begin{DoxyVerb} Configure all clocks and registers.
+    Initialize all GPIOs and Timers
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if no error 
+
+1 if error takes place in the initialization 
+\end{DoxyReturn}
+\hypertarget{s__serial_comm_8c_a4f674a4016a8f0b3e2dabadc424d554a}{\index{s\+\_\+serial\+Comm.\+c@{s\+\_\+serial\+Comm.\+c}!s\+\_\+serial\+Comm\+\_\+it\+\_\+function@{s\+\_\+serial\+Comm\+\_\+it\+\_\+function}}
+\index{s\+\_\+serial\+Comm\+\_\+it\+\_\+function@{s\+\_\+serial\+Comm\+\_\+it\+\_\+function}!s\+\_\+serial\+Comm.\+c@{s\+\_\+serial\+Comm.\+c}}
+\subsubsection[{s\+\_\+serial\+Comm\+\_\+it\+\_\+function}]{\setlength{\rightskip}{0pt plus 5cm}void s\+\_\+serial\+Comm\+\_\+it\+\_\+function (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{s__serial_comm_8c_a4f674a4016a8f0b3e2dabadc424d554a}
+s\+\_\+serial\+Comm\+\_\+it\+\_\+function \begin{DoxyVerb} IT Function called when UART interruption takes place
+    Get received character from the UART register
+    Call function in the main application in order to process the
+    received data. \end{DoxyVerb}
+ \hypertarget{s__serial_comm_8c_acd545bd19769722c9a852c96e4f915e7}{\index{s\+\_\+serial\+Comm.\+c@{s\+\_\+serial\+Comm.\+c}!s\+\_\+serial\+Comm\+\_\+send\+Char@{s\+\_\+serial\+Comm\+\_\+send\+Char}}
+\index{s\+\_\+serial\+Comm\+\_\+send\+Char@{s\+\_\+serial\+Comm\+\_\+send\+Char}!s\+\_\+serial\+Comm.\+c@{s\+\_\+serial\+Comm.\+c}}
+\subsubsection[{s\+\_\+serial\+Comm\+\_\+send\+Char}]{\setlength{\rightskip}{0pt plus 5cm}char s\+\_\+serial\+Comm\+\_\+send\+Char (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{s__serial_comm_8c_acd545bd19769722c9a852c96e4f915e7}
+s\+\_\+serial\+Comm\+\_\+send\+Char \begin{DoxyVerb}    Send character to USART serie protocol
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if no error 
+
+1 if error during send 
+\end{DoxyReturn}
+\hypertarget{s__serial_comm_8c_abe4e8621b3d78e298fc0a064c675db51}{\index{s\+\_\+serial\+Comm.\+c@{s\+\_\+serial\+Comm.\+c}!s\+\_\+serial\+Comm\+\_\+send\+String@{s\+\_\+serial\+Comm\+\_\+send\+String}}
+\index{s\+\_\+serial\+Comm\+\_\+send\+String@{s\+\_\+serial\+Comm\+\_\+send\+String}!s\+\_\+serial\+Comm.\+c@{s\+\_\+serial\+Comm.\+c}}
+\subsubsection[{s\+\_\+serial\+Comm\+\_\+send\+String}]{\setlength{\rightskip}{0pt plus 5cm}char s\+\_\+serial\+Comm\+\_\+send\+String (
+\begin{DoxyParamCaption}
+\item[{char}]{string\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{s__serial_comm_8c_abe4e8621b3d78e298fc0a064c675db51}
+s\+\_\+serial\+Comm\+\_\+send\+String \begin{DoxyVerb}    Send words (strings) to USART serie protocol
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if no error 
+
+1 if error during send 
+\end{DoxyReturn}

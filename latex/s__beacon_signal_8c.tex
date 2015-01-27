@@ -1,0 +1,169 @@
+\hypertarget{s__beacon_signal_8c}{\section{src/services/s\+\_\+beacon\+Signal.c File Reference}
+\label{s__beacon_signal_8c}\index{src/services/s\+\_\+beacon\+Signal.\+c@{src/services/s\+\_\+beacon\+Signal.\+c}}
+}
+
+
+Beacon signal emission file core.  
+
+
+{\ttfamily \#include \char`\"{}s\+\_\+beacon\+Signal.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{s__beacon_signal_8c_a90346dc49f0a8f6eeaaab8a26f3a22b5}{enable\+Systick} ()
+\item 
+void \hyperlink{s__beacon_signal_8c_acbfa3327cc59cede48c905ac55acebbf}{s\+\_\+beacon\+Signal\+\_\+initialization} (void($\ast$function)(void))
+\item 
+void \hyperlink{s__beacon_signal_8c_ab23ead988848d6aa3aabb6d25e88a006}{s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M} ()
+\item 
+void \hyperlink{s__beacon_signal_8c_ae20fd0fba90163454d5267b58a9e14bd}{s\+\_\+beacon\+Signal\+\_\+pulse} (void)
+\item 
+void \hyperlink{s__beacon_signal_8c_aaf389a27404471cffbdb1599aec96c73}{s\+\_\+beacon\+Signal\+\_\+zero} (void)
+\item 
+int \hyperlink{s__beacon_signal_8c_a0718b0d6218cd14a7c5410925ffbbd83}{Get\+State\+Tamp\+Button} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vu16 \hyperlink{s__beacon_signal_8c_ae2f3bd7c2daf17e9dadd1c2d493255da}{resolution\+\_\+pwm1}
+\item 
+\hypertarget{s__beacon_signal_8c_a3a624f7dbfa6101aceb09186ae19cdc1}{vu16 {\bfseries resolution\+\_\+pwm2}}\label{s__beacon_signal_8c_a3a624f7dbfa6101aceb09186ae19cdc1}
+
+\item 
+\hypertarget{s__beacon_signal_8c_aace625ea566505ff5e1b67ec14a99cbf}{vu16 {\bfseries resolution\+\_\+pwm3}}\label{s__beacon_signal_8c_aace625ea566505ff5e1b67ec14a99cbf}
+
+\item 
+\hypertarget{s__beacon_signal_8c_a2223d7b539b48879180de00cba6ad72b}{vu16 {\bfseries resolution\+\_\+pwm4}}\label{s__beacon_signal_8c_a2223d7b539b48879180de00cba6ad72b}
+
+\item 
+State\+\_\+\+P\+W\+M \hyperlink{s__beacon_signal_8c_aed2cd5a4ec823d5dea1374f445523e3f}{state\+\_\+pwm} = P\+W\+M\+\_\+\+Z\+E\+R\+O
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Beacon signal emission file core. 
+
+This file contains the S\+E\+R\+V\+I\+C\+E beacon signal emission. Initializes, configurates and activates timers with P\+W\+M mode.
+
+\begin{DoxyAuthor}{Author}
+Guillaume 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+02 Oct 2014 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{s__beacon_signal_8c_a90346dc49f0a8f6eeaaab8a26f3a22b5}{\index{s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}!enable\+Systick@{enable\+Systick}}
+\index{enable\+Systick@{enable\+Systick}!s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}}
+\subsubsection[{enable\+Systick}]{\setlength{\rightskip}{0pt plus 5cm}void enable\+Systick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{s__beacon_signal_8c_a90346dc49f0a8f6eeaaab8a26f3a22b5}
+void \hyperlink{s__beacon_signal_8c_a90346dc49f0a8f6eeaaab8a26f3a22b5}{enable\+Systick()} \begin{DoxyVerb}Enable the systick timer
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{s__beacon_signal_8c_a0718b0d6218cd14a7c5410925ffbbd83}{\index{s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}!Get\+State\+Tamp\+Button@{Get\+State\+Tamp\+Button}}
+\index{Get\+State\+Tamp\+Button@{Get\+State\+Tamp\+Button}!s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}}
+\subsubsection[{Get\+State\+Tamp\+Button}]{\setlength{\rightskip}{0pt plus 5cm}int Get\+State\+Tamp\+Button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{s__beacon_signal_8c_a0718b0d6218cd14a7c5410925ffbbd83}
+Get\+State\+Tamp\+Button \begin{DoxyVerb}    Notice the user if the "tamp" button is pressed
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if tamp is activated 
+
+1 it tamp is not activated 
+\end{DoxyReturn}
+\hypertarget{s__beacon_signal_8c_ab23ead988848d6aa3aabb6d25e88a006}{\index{s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}!s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M@{s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M}}
+\index{s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M@{s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M}!s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}}
+\subsubsection[{s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M}]{\setlength{\rightskip}{0pt plus 5cm}void s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{s__beacon_signal_8c_ab23ead988848d6aa3aabb6d25e88a006}
+s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M \begin{DoxyVerb}    Emission PWM to every Beacon for a pre-defined period of time
+        Mode ON on each GPIO (output with PWM signal)
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & time of emission in \mbox{[}ms\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{s__beacon_signal_8c_acbfa3327cc59cede48c905ac55acebbf}{\index{s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}!s\+\_\+beacon\+Signal\+\_\+initialization@{s\+\_\+beacon\+Signal\+\_\+initialization}}
+\index{s\+\_\+beacon\+Signal\+\_\+initialization@{s\+\_\+beacon\+Signal\+\_\+initialization}!s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}}
+\subsubsection[{s\+\_\+beacon\+Signal\+\_\+initialization}]{\setlength{\rightskip}{0pt plus 5cm}void s\+\_\+beacon\+Signal\+\_\+initialization (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void)}]{function}
+\end{DoxyParamCaption}
+)}}\label{s__beacon_signal_8c_acbfa3327cc59cede48c905ac55acebbf}
+s\+\_\+beacon\+Signal\+\_\+initialization \begin{DoxyVerb} Configure all clocks and registers.
+    Initialize all GPIOs and Timers
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{s__beacon_signal_8c_ae20fd0fba90163454d5267b58a9e14bd}{\index{s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}!s\+\_\+beacon\+Signal\+\_\+pulse@{s\+\_\+beacon\+Signal\+\_\+pulse}}
+\index{s\+\_\+beacon\+Signal\+\_\+pulse@{s\+\_\+beacon\+Signal\+\_\+pulse}!s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}}
+\subsubsection[{s\+\_\+beacon\+Signal\+\_\+pulse}]{\setlength{\rightskip}{0pt plus 5cm}void s\+\_\+beacon\+Signal\+\_\+pulse (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{s__beacon_signal_8c_ae20fd0fba90163454d5267b58a9e14bd}
+s\+\_\+beacon\+Signal\+\_\+reset \begin{DoxyVerb}    Reset initial conditions in beaconSignal service
+    State PWM in mode ZERO
+    LED ON\end{DoxyVerb}
+ \hypertarget{s__beacon_signal_8c_aaf389a27404471cffbdb1599aec96c73}{\index{s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}!s\+\_\+beacon\+Signal\+\_\+zero@{s\+\_\+beacon\+Signal\+\_\+zero}}
+\index{s\+\_\+beacon\+Signal\+\_\+zero@{s\+\_\+beacon\+Signal\+\_\+zero}!s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}}
+\subsubsection[{s\+\_\+beacon\+Signal\+\_\+zero}]{\setlength{\rightskip}{0pt plus 5cm}void s\+\_\+beacon\+Signal\+\_\+zero (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{s__beacon_signal_8c_aaf389a27404471cffbdb1599aec96c73}
+s\+\_\+beacon\+Signal\+\_\+pwm \begin{DoxyVerb}    beaconSignal service in mode ZERO
+    State PWM in mode PULSE for next switch
+    LED OFF\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\hypertarget{s__beacon_signal_8c_ae2f3bd7c2daf17e9dadd1c2d493255da}{\index{s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}!resolution\+\_\+pwm1@{resolution\+\_\+pwm1}}
+\index{resolution\+\_\+pwm1@{resolution\+\_\+pwm1}!s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}}
+\subsubsection[{resolution\+\_\+pwm1}]{\setlength{\rightskip}{0pt plus 5cm}vu16 resolution\+\_\+pwm1}}\label{s__beacon_signal_8c_ae2f3bd7c2daf17e9dadd1c2d493255da}
+Timer's Resolution \hypertarget{s__beacon_signal_8c_aed2cd5a4ec823d5dea1374f445523e3f}{\index{s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}!state\+\_\+pwm@{state\+\_\+pwm}}
+\index{state\+\_\+pwm@{state\+\_\+pwm}!s\+\_\+beacon\+Signal.\+c@{s\+\_\+beacon\+Signal.\+c}}
+\subsubsection[{state\+\_\+pwm}]{\setlength{\rightskip}{0pt plus 5cm}State\+\_\+\+P\+W\+M state\+\_\+pwm = P\+W\+M\+\_\+\+Z\+E\+R\+O}}\label{s__beacon_signal_8c_aed2cd5a4ec823d5dea1374f445523e3f}
+pwm state 

@@ -1,31 +1,33 @@
 Archive member included because of file (symbol)
 
 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
-                              ./output/emission.o (Systick_Prio_IT)
+                              ./output/s_beaconsignal.o (Systick_Prio_IT)
 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
                               ./output/s_beaconsignal.o (GPIO_Configure)
 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
                               ./output/s_beaconsignal.o (PWM_Init)
 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
                               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o) (stm32_Get_TIMXCLK)
-c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
+d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
                               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o) (__aeabi_dadd)
-c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
+d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
                               ./output/s_beaconsignal.o (__aeabi_dmul)
-c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpdf2.o)
+                              ./output/s_beaconsignal.o (__aeabi_dcmpge)
+d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
                               ./output/s_beaconsignal.o (__aeabi_d2uiz)
-c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
+d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
                               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o) (__aeabi_d2f)
-c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
-                              ./output/usart.o (__aeabi_fsub)
-c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
-                              ./output/usart.o (__aeabi_fmul)
-c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
+d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
+                              ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o) (__aeabi_ui2f)
+d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
+                              ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o) (__aeabi_fmul)
+d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
                               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o) (__aeabi_fcmplt)
-c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
+d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
                               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o) (__aeabi_f2iz)
-c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
-                              ./output/usart.o (__aeabi_f2uiz)
+d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
+                              ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o) (__aeabi_f2uiz)
 
 Allocating common symbols
 Common symbol       size              file
@@ -41,11 +43,8 @@ Enable_Fct_IT_Compare_Match_TIM4_Voie3
 Enable_Fct_IT_Compare_Match_TIM1_Voie1
                     0x1               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
 resolution_pwm4     0x2               ./output/s_beaconsignal.o
-s_serialComm_pFct   0x4               ./output/s_beaconsignal.o
 Enable_Fct_IT_Compare_Match_TIM3_Voie4
                     0x1               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
-PTR_Function_USART1
-                    0x4               ./output/usart.o
 Enable_Fct_IT_Compare_Match_TIM4_Voie1
                     0x1               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
 Enable_Fct_IT_Compare_Match_TIM3_Voie2
@@ -61,16 +60,12 @@ Enable_Fct_IT_Compare_Match_TIM2_Voie4
                     0x1               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
 Enable_Fct_IT_Compare_Match_TIM3_Voie3
                     0x1               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
-PTR_Function_USART2
-                    0x4               ./output/usart.o
 resolution_pwm3     0x2               ./output/s_beaconsignal.o
 Enable_Fct_IT_Compare_Match_TIM2_Voie2
                     0x1               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
 Enable_Fct_IT_Compare_Match_TIM1_Voie2
                     0x1               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
 resolution_pwm1     0x2               ./output/s_beaconsignal.o
-PTR_Function_USART3
-                    0x4               ./output/usart.o
 Enable_Fct_IT_Compare_Match_TIM4_Voie2
                     0x1               ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
 
@@ -83,37 +78,34 @@ RAM              0x20000000         0x00005000         rw
 
 Linker script and memory map
 
-LOAD c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
-LOAD c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+LOAD d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+LOAD d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
 LOAD ./output/startup-gcc.o
 LOAD ./output/clock.o
-LOAD ./output/usart.o
-LOAD ./output/lcd_4bit.o
 LOAD ./output/s_beaconsignal.o
-LOAD ./output/s_serialcomm.o
 LOAD ./output/main.o
 LOAD ./output/emission.o
 LOAD ../lib\libDrivers_STM32F107_TR_ClockSeb.a
-LOAD c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libm.a
+LOAD d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libm.a
 START GROUP
-LOAD c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a
-LOAD c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libc.a
+LOAD d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a
+LOAD d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libc.a
 END GROUP
-LOAD c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
-LOAD c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+LOAD d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+LOAD d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
 START GROUP
-LOAD c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a
-LOAD c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libc.a
-LOAD c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libm.a
+LOAD d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a
+LOAD d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libc.a
+LOAD d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libm.a
 END GROUP
 
-.text           0x08000000     0x4490
+.text           0x08000000     0x3d68
  *(.isr_vector)
  .isr_vector    0x08000000       0xec ./output/startup-gcc.o
                 0x08000000                __isr_vector
  *(.text*)
- .text          0x080000ec        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
- .text          0x080000ec       0xc8 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .text          0x080000ec        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+ .text          0x080000ec       0xc8 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
  .text          0x080001b4       0x8c ./output/startup-gcc.o
                 0x080001b4                Reset_Handler
                 0x08000228                SystemInit
@@ -125,14 +117,15 @@ END GROUP
                 0x08000234                SVC_Handler
                 0x08000236                DebugMon_Handler
                 0x08000238                PendSV_Handler
-                0x0800023c                DMAChannel1_IRQHandler
-                0x0800023c                I2C2_EV_IRQHandler
+                0x0800023c                EXTI0_IRQHandler
                 0x0800023c                SPI1_IRQHandler
                 0x0800023c                TAMPER_IRQHandler
                 0x0800023c                DMAChannel4_IRQHandler
-                0x0800023c                RTC_IRQHandler
-                0x0800023c                EXTI0_IRQHandler
+                0x0800023c                USART3_IRQHandler
+                0x0800023c                DMAChannel1_IRQHandler
+                0x0800023c                I2C2_EV_IRQHandler
                 0x0800023c                DMAChannel7_IRQHandler
+                0x0800023c                CAN1_RX1_IRQHandler
                 0x0800023c                I2C1_EV_IRQHandler
                 0x0800023c                RCC_IRQHandler
                 0x0800023c                TIM1_TRG_COM_IRQHandler
@@ -146,18 +139,20 @@ END GROUP
                 0x0800023c                EXTI3_IRQHandler
                 0x0800023c                EXTI4_IRQHandler
                 0x0800023c                USB_LP_CAN1_RX0_IRQHandler
-                0x0800023c                CAN1_RX1_IRQHandler
+                0x0800023c                RTC_IRQHandler
                 0x0800023c                USB_HP_CAN1_TX_IRQHandler
                 0x0800023c                WWDG_IRQHandler
                 0x0800023c                TIM1_BRK_IRQHandler
                 0x0800023c                EXTI1_IRQHandler
                 0x0800023c                RTCAlarm_IRQHandler
+                0x0800023c                USART2_IRQHandler
                 0x0800023c                I2C2_ER_IRQHandler
                 0x0800023c                CAN1_SCE_IRQHandler
                 0x0800023c                FLASH_IRQHandler
                 0x0800023c                DMAChannel6_IRQHandler
                 0x0800023c                DMAChannel3_IRQHandler
                 0x0800023c                EXTI2_IRQHandler
+                0x0800023c                USART1_IRQHandler
                 0x0800023c                I2C1_ER_IRQHandler
                 0x0800023c                USBWakeUp_IRQHandler
  .text          0x08000240       0xa8 ./output/clock.o
@@ -167,148 +162,138 @@ END GROUP
                 0x080002d0                CLOCK_GetPCLK1
                 0x080002d8                CLOCK_GetPCLK2
                 0x080002e0                CLOCK_GetADCCLK
- .text          0x080002e8      0x2f0 ./output/usart.o
-                0x080002e8                Init_USART
-                0x080003fc                Send_Data_USART
-                0x08000428                Send_String_USART
-                0x08000454                Receive_Data_USART
-                0x08000470                Data_USART
-                0x08000478                USART1_IRQHandler
-                0x080004c0                USART2_IRQHandler
-                0x080004f4                USART3_IRQHandler
-                0x0800053c                Active_Interrupt_Received_Data_available
- .text          0x080005d8      0x2ac ./output/lcd_4bit.o
-                0x08000660                delaybis
-                0x0800066c                lcd_write_4bit
-                0x080006a4                lcd_write_cmd
-                0x080006cc                lcd_putchar
-                0x080006f4                lcd_init
-                0x08000798                set_cursor
-                0x080007b0                lcd_clear
-                0x080007c8                lcd_print
-                0x080007e0                lcd_bargraph
-                0x08000830                lcd_bargraphXY
- .text          0x08000884      0x398 ./output/s_beaconsignal.o
-                0x08000884                s_beaconSignal_initialization
-                0x08000a1c                s_beaconSignal_reset
-                0x08000ab4                s_beaconSignal_zero
-                0x08000b50                s_beaconSignal_emission_PWM
-                0x08000c0c                GetStateTampButton
- .text          0x08000c1c      0x174 ./output/s_serialcomm.o
-                0x08000c1c                s_serialComm_it_function
-                0x08000c48                s_serialComm_initialization
-                0x08000d10                s_serialComm_sendChar
-                0x08000d50                s_serialComm_sendString
- .text          0x08000d90        0xc ./output/main.o
-                0x08000d90                main
- .text          0x08000d9c      0x168 ./output/emission.o
-                0x08000d9c                app_commBeacons
-                0x08000da4                app_serialCommHandler
-                0x08000e50                app_initialization
-                0x08000e98                UpdateStateMachineEmission
- .text          0x08000f04      0x190 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
-                0x08000f04                Systick_Prio_IT
-                0x08000f5c                Systick_Period
-                0x08001080                SysTick_Handler
- .text          0x08001094      0x210 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
-                0x08001094                GPIO_Configure
- *fill*         0x080012a4        0x4 
- .text          0x080012a8     0x2258 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
-                0x080012a8                Timer_1234_Init
-                0x080014d8                Active_IT_Debordement_Timer
-                0x0800175c                Active_IT_Compare_Timer
-                0x08001d2c                PWM_Init
-                0x08001f3c                Timer_Inc_Init
-                0x08002118                Capture_Init
-                0x08002640                TIM1_CC_IRQHandler
-                0x08002980                TIM1_UP_IRQHandler
-                0x080029c8                TIM2_IRQHandler
-                0x08002cec                TIM3_IRQHandler
-                0x080030a0                TIM4_IRQHandler
-                0x08003454                Lire_Duree_Pulse
- .text          0x08003500       0x4c ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
-                0x08003500                stm32_Get_TIMXCLK
-                0x08003514                stm32_Get_TIMxCLK
-                0x0800352c                stm32_Get_ADCCLK
-                0x0800353c                stm32_GetHCLK
- .text          0x0800354c      0x370 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
-                0x0800354c                __aeabi_drsub
-                0x08003554                __aeabi_dsub
-                0x08003554                __subdf3
-                0x08003558                __aeabi_dadd
-                0x08003558                __adddf3
-                0x080037d0                __floatunsidf
-                0x080037d0                __aeabi_ui2d
-                0x080037f0                __floatsidf
-                0x080037f0                __aeabi_i2d
-                0x08003814                __aeabi_f2d
-                0x08003814                __extendsfdf2
-                0x08003850                __floatundidf
-                0x08003850                __aeabi_ul2d
-                0x08003860                __floatdidf
-                0x08003860                __aeabi_l2d
- .text          0x080038bc      0x424 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
-                0x080038bc                __aeabi_dmul
-                0x080038bc                __muldf3
-                0x08003b10                __divdf3
-                0x08003b10                __aeabi_ddiv
- .text          0x08003ce0       0x40 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
-                0x08003ce0                __aeabi_d2uiz
-                0x08003ce0                __fixunsdfsi
- .text          0x08003d20       0xa0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
-                0x08003d20                __truncdfsf2
-                0x08003d20                __aeabi_d2f
- .text          0x08003dc0      0x21c c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
-                0x08003dc0                __aeabi_frsub
-                0x08003dc8                __subsf3
-                0x08003dc8                __aeabi_fsub
-                0x08003dcc                __aeabi_fadd
-                0x08003dcc                __addsf3
-                0x08003f2c                __aeabi_ui2f
-                0x08003f2c                __floatunsisf
-                0x08003f34                __aeabi_i2f
-                0x08003f34                __floatsisf
-                0x08003f50                __aeabi_ul2f
-                0x08003f50                __floatundisf
-                0x08003f60                __aeabi_l2f
-                0x08003f60                __floatdisf
- .text          0x08003fdc      0x2a0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
-                0x08003fdc                __mulsf3
-                0x08003fdc                __aeabi_fmul
-                0x08004144                __aeabi_fdiv
-                0x08004144                __divsf3
- .text          0x0800427c       0xec c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
-                0x0800427c                __gesf2
-                0x0800427c                __gtsf2
-                0x08004284                __lesf2
-                0x08004284                __ltsf2
-                0x0800428c                __nesf2
-                0x0800428c                __eqsf2
-                0x0800428c                __cmpsf2
-                0x080042ec                __aeabi_cfrcmple
-                0x080042f4                __aeabi_cfcmpeq
-                0x080042f4                __aeabi_cfcmple
-                0x08004304                __aeabi_fcmpeq
-                0x08004318                __aeabi_fcmplt
-                0x0800432c                __aeabi_fcmple
-                0x08004340                __aeabi_fcmpge
-                0x08004354                __aeabi_fcmpgt
- .text          0x08004368       0x4c c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
-                0x08004368                __aeabi_f2iz
-                0x08004368                __fixsfsi
- .text          0x080043b4       0x40 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
-                0x080043b4                __fixunssfsi
-                0x080043b4                __aeabi_f2uiz
- .text          0x080043f4        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
- .text          0x080043f4        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+ .text          0x080002e8      0x3f0 ./output/s_beaconsignal.o
+                0x080002e8                enableSystick
+                0x08000300                s_beaconSignal_initialization
+                0x080004c4                s_beaconSignal_pulse
+                0x0800055c                s_beaconSignal_zero
+                0x080005f8                s_beaconSignal_emission_PWM
+                0x080006c8                GetStateTampButton
+ .text          0x080006d8        0xc ./output/main.o
+                0x080006d8                main
+ .text          0x080006e4       0x68 ./output/emission.o
+                0x080006e4                app_commBeacons
+                0x080006ec                app_initialization
+                0x08000700                UpdateStateMachineEmission
+ .text          0x0800074c      0x190 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
+                0x0800074c                Systick_Prio_IT
+                0x080007a4                Systick_Period
+                0x080008c8                SysTick_Handler
+ .text          0x080008dc      0x210 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
+                0x080008dc                GPIO_Configure
+ *fill*         0x08000aec        0x4 
+ .text          0x08000af0     0x2258 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+                0x08000af0                Timer_1234_Init
+                0x08000d20                Active_IT_Debordement_Timer
+                0x08000fa4                Active_IT_Compare_Timer
+                0x08001574                PWM_Init
+                0x08001784                Timer_Inc_Init
+                0x08001960                Capture_Init
+                0x08001e88                TIM1_CC_IRQHandler
+                0x080021c8                TIM1_UP_IRQHandler
+                0x08002210                TIM2_IRQHandler
+                0x08002534                TIM3_IRQHandler
+                0x080028e8                TIM4_IRQHandler
+                0x08002c9c                Lire_Duree_Pulse
+ .text          0x08002d48       0x4c ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+                0x08002d48                stm32_Get_TIMXCLK
+                0x08002d5c                stm32_Get_TIMxCLK
+                0x08002d74                stm32_Get_ADCCLK
+                0x08002d84                stm32_GetHCLK
+ .text          0x08002d94      0x370 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
+                0x08002d94                __aeabi_drsub
+                0x08002d9c                __aeabi_dsub
+                0x08002d9c                __subdf3
+                0x08002da0                __aeabi_dadd
+                0x08002da0                __adddf3
+                0x08003018                __floatunsidf
+                0x08003018                __aeabi_ui2d
+                0x08003038                __floatsidf
+                0x08003038                __aeabi_i2d
+                0x0800305c                __aeabi_f2d
+                0x0800305c                __extendsfdf2
+                0x08003098                __floatundidf
+                0x08003098                __aeabi_ul2d
+                0x080030a8                __floatdidf
+                0x080030a8                __aeabi_l2d
+ .text          0x08003104      0x424 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
+                0x08003104                __aeabi_dmul
+                0x08003104                __muldf3
+                0x08003358                __divdf3
+                0x08003358                __aeabi_ddiv
+ .text          0x08003528      0x110 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpdf2.o)
+                0x08003528                __gtdf2
+                0x08003528                __gedf2
+                0x08003530                __ltdf2
+                0x08003530                __ledf2
+                0x08003538                __nedf2
+                0x08003538                __eqdf2
+                0x08003538                __cmpdf2
+                0x080035b4                __aeabi_cdrcmple
+                0x080035c4                __aeabi_cdcmpeq
+                0x080035c4                __aeabi_cdcmple
+                0x080035d4                __aeabi_dcmpeq
+                0x080035e8                __aeabi_dcmplt
+                0x080035fc                __aeabi_dcmple
+                0x08003610                __aeabi_dcmpge
+                0x08003624                __aeabi_dcmpgt
+ .text          0x08003638       0x40 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+                0x08003638                __aeabi_d2uiz
+                0x08003638                __fixunsdfsi
+ .text          0x08003678       0xa0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
+                0x08003678                __truncdfsf2
+                0x08003678                __aeabi_d2f
+ .text          0x08003718      0x21c d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
+                0x08003718                __aeabi_frsub
+                0x08003720                __subsf3
+                0x08003720                __aeabi_fsub
+                0x08003724                __aeabi_fadd
+                0x08003724                __addsf3
+                0x08003884                __aeabi_ui2f
+                0x08003884                __floatunsisf
+                0x0800388c                __aeabi_i2f
+                0x0800388c                __floatsisf
+                0x080038a8                __aeabi_ul2f
+                0x080038a8                __floatundisf
+                0x080038b8                __aeabi_l2f
+                0x080038b8                __floatdisf
+ .text          0x08003934      0x2a0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
+                0x08003934                __mulsf3
+                0x08003934                __aeabi_fmul
+                0x08003a9c                __aeabi_fdiv
+                0x08003a9c                __divsf3
+ .text          0x08003bd4       0xec d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
+                0x08003bd4                __gesf2
+                0x08003bd4                __gtsf2
+                0x08003bdc                __lesf2
+                0x08003bdc                __ltsf2
+                0x08003be4                __nesf2
+                0x08003be4                __eqsf2
+                0x08003be4                __cmpsf2
+                0x08003c44                __aeabi_cfrcmple
+                0x08003c4c                __aeabi_cfcmpeq
+                0x08003c4c                __aeabi_cfcmple
+                0x08003c5c                __aeabi_fcmpeq
+                0x08003c70                __aeabi_fcmplt
+                0x08003c84                __aeabi_fcmple
+                0x08003c98                __aeabi_fcmpge
+                0x08003cac                __aeabi_fcmpgt
+ .text          0x08003cc0       0x4c d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
+                0x08003cc0                __aeabi_f2iz
+                0x08003cc0                __fixsfsi
+ .text          0x08003d0c       0x40 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
+                0x08003d0c                __fixunssfsi
+                0x08003d0c                __aeabi_f2uiz
+ .text          0x08003d4c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+ .text          0x08003d4c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
  *(.init)
- .init          0x080043f4        0x4 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
-                0x080043f4                _init
- .init          0x080043f8        0x8 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+ .init          0x08003d4c        0x4 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+                0x08003d4c                _init
+ .init          0x08003d50        0x8 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
  *(.fini)
- .fini          0x08004400        0x4 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
-                0x08004400                _fini
- .fini          0x08004404        0x8 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+ .fini          0x08003d58        0x4 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+                0x08003d58                _fini
+ .fini          0x08003d5c        0x8 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -320,180 +305,164 @@ END GROUP
  *(SORT(.dtors.*))
  *(.dtors)
  *(.rodata*)
- .rodata        0x0800440c       0x80 ./output/lcd_4bit.o
-                0x0800440c                SWAP_DATA
-                0x0800444c                UserFont
  *(.eh_frame*)
- .eh_frame      0x0800448c        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
- .eh_frame      0x0800448c        0x4 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+ .eh_frame      0x08003d64        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .eh_frame      0x08003d64        0x4 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
 
-.glue_7         0x08004490        0x0
+.glue_7         0x08003d68        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x08004490        0x0
+.glue_7t        0x08003d68        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x08004490        0x0
+.vfp11_veneer   0x08003d68        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x08004490        0x0
+.v4_bx          0x08003d68        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08004490        0x0
- .iplt          0x00000000        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+.iplt           0x08003d68        0x0
+ .iplt          0x00000000        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
 
-.rel.dyn        0x08004490        0x0
- .rel.iplt      0x00000000        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+.rel.dyn        0x08003d68        0x0
+ .rel.iplt      0x00000000        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08004490                __exidx_start = .
+                0x08003d68                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x08004490                __exidx_end = .
-                0x08004490                __etext = .
+                0x08003d68                __exidx_end = .
+                0x08003d68                __etext = .
 
-.data           0x20000000       0x18 load address 0x08004490
+.data           0x20000000       0x14 load address 0x08003d68
                 0x20000000                __data_start__ = .
  *(vtable)
  *(.data*)
- .data          0x20000000        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
- .data          0x20000000        0x4 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .data          0x20000000        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+ .data          0x20000000        0x4 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
                 0x20000000                __dso_handle
  .data          0x20000004        0x0 ./output/startup-gcc.o
  .data          0x20000004        0x0 ./output/clock.o
- .data          0x20000004        0x0 ./output/usart.o
- .data          0x20000004        0x0 ./output/lcd_4bit.o
- .data          0x20000004        0x3 ./output/s_beaconsignal.o
+ .data          0x20000004        0x1 ./output/s_beaconsignal.o
                 0x20000004                state_pwm
-                0x20000005                PwmOnNumberPeriodSystick
-                0x20000006                PwmOffNumberPeriodSystick
- .data          0x20000007        0x0 ./output/s_serialcomm.o
- .data          0x20000007        0x0 ./output/main.o
- *fill*         0x20000007        0x1 
- .data          0x20000008        0x8 ./output/emission.o
-                0x20000008                state
-                0x20000009                prev_state
- .data          0x20000010        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
- .data          0x20000010        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
- .data          0x20000010        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
- .data          0x20000010        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
- .data          0x20000010        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
-                0x20000010                . = ALIGN (0x4)
-                0x20000010                PROVIDE (__preinit_array_start, .)
+ .data          0x20000005        0x0 ./output/main.o
+ *fill*         0x20000005        0x3 
+ .data          0x20000008        0x4 ./output/emission.o
+ .data          0x2000000c        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
+ .data          0x2000000c        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
+ .data          0x2000000c        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+ .data          0x2000000c        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpdf2.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+ .data          0x2000000c        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+                0x2000000c                . = ALIGN (0x4)
+                0x2000000c                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x20000010                PROVIDE (__preinit_array_end, .)
-                0x20000010                . = ALIGN (0x4)
-                0x20000010                PROVIDE (__init_array_start, .)
+                0x2000000c                PROVIDE (__preinit_array_end, .)
+                0x2000000c                . = ALIGN (0x4)
+                0x2000000c                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x20000010        0x4 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
-                0x20000014                PROVIDE (__init_array_end, .)
-                0x20000014                . = ALIGN (0x4)
-                0x20000014                PROVIDE (__fini_array_start, .)
+ .init_array    0x2000000c        0x4 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+                0x20000010                PROVIDE (__init_array_end, .)
+                0x20000010                . = ALIGN (0x4)
+                0x20000010                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array)
- .fini_array    0x20000014        0x4 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
-                0x20000018                PROVIDE (__fini_array_end, .)
-                0x20000018                . = ALIGN (0x4)
-                0x20000018                __data_end__ = .
+ .fini_array    0x20000010        0x4 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+                0x20000014                PROVIDE (__fini_array_end, .)
+                0x20000014                . = ALIGN (0x4)
+                0x20000014                __data_end__ = .
 
-.jcr            0x20000018        0x4 load address 0x080044a8
- .jcr           0x20000018        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
- .jcr           0x20000018        0x4 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+.jcr            0x20000014        0x4 load address 0x08003d7c
+ .jcr           0x20000014        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .jcr           0x20000014        0x4 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
 
 .tm_clone_table
-                0x2000001c        0x0 load address 0x080044ac
+                0x20000018        0x0 load address 0x08003d80
  .tm_clone_table
-                0x2000001c        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+                0x20000018        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
  .tm_clone_table
-                0x2000001c        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+                0x20000018        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
 
-.igot.plt       0x2000001c        0x0 load address 0x080044ac
- .igot.plt      0x00000000        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+.igot.plt       0x20000018        0x0 load address 0x08003d80
+ .igot.plt      0x00000000        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
 
-.bss            0x2000001c       0xde load address 0x080044ac
-                0x2000001c                __bss_start__ = .
+.bss            0x20000018       0xcc load address 0x08003d80
+                0x20000018                __bss_start__ = .
  *(.bss*)
- .bss           0x2000001c        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
- .bss           0x2000001c       0x1c c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
- .bss           0x20000038        0x0 ./output/startup-gcc.o
- .bss           0x20000038        0x0 ./output/clock.o
- .bss           0x20000038        0x0 ./output/usart.o
- .bss           0x20000038        0x0 ./output/lcd_4bit.o
- .bss           0x20000038        0x2 ./output/s_beaconsignal.o
- .bss           0x2000003a        0x0 ./output/s_serialcomm.o
- .bss           0x2000003a        0x0 ./output/main.o
- .bss           0x2000003a        0x0 ./output/emission.o
- *fill*         0x2000003a        0x2 
- .bss           0x2000003c        0x4 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
- .bss           0x20000040        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
- .bss           0x20000040       0x90 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
- .bss           0x200000d0        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
- .bss           0x200000d0        0x0 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+ .bss           0x20000018        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+ .bss           0x20000018       0x1c d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .bss           0x20000034        0x0 ./output/startup-gcc.o
+ .bss           0x20000034        0x0 ./output/clock.o
+ .bss           0x20000034        0x2 ./output/s_beaconsignal.o
+ .bss           0x20000036        0x0 ./output/main.o
+ .bss           0x20000036        0x0 ./output/emission.o
+ *fill*         0x20000036        0x2 
+ .bss           0x20000038        0x4 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
+ .bss           0x2000003c        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
+ .bss           0x2000003c       0x90 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+ .bss           0x200000cc        0x0 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+ .bss           0x200000cc        0x0 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
  *(COMMON)
- COMMON         0x200000d0        0xc ./output/usart.o
-                0x200000d0                PTR_Function_USART1
-                0x200000d4                PTR_Function_USART2
-                0x200000d8                PTR_Function_USART3
- COMMON         0x200000dc        0xe ./output/s_beaconsignal.o
-                0x200000dc                resolution_pwm4
-                0x200000e0                s_serialComm_pFct
-                0x200000e4                resolution_pwm2
-                0x200000e6                resolution_pwm3
-                0x200000e8                resolution_pwm1
- COMMON         0x200000ea       0x10 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
-                0x200000ea                Enable_Fct_IT_Compare_Match_TIM3_Voie1
-                0x200000eb                Enable_Fct_IT_Compare_Match_TIM1_Voie3
-                0x200000ec                Enable_Fct_IT_Compare_Match_TIM2_Voie1
-                0x200000ed                Enable_Fct_IT_Compare_Match_TIM4_Voie3
-                0x200000ee                Enable_Fct_IT_Compare_Match_TIM1_Voie1
-                0x200000ef                Enable_Fct_IT_Compare_Match_TIM3_Voie4
-                0x200000f0                Enable_Fct_IT_Compare_Match_TIM4_Voie1
-                0x200000f1                Enable_Fct_IT_Compare_Match_TIM3_Voie2
-                0x200000f2                Enable_Fct_IT_Compare_Match_TIM2_Voie3
-                0x200000f3                Enable_Fct_IT_Compare_Match_TIM1_Voie4
-                0x200000f4                Enable_Fct_IT_Compare_Match_TIM4_Voie4
-                0x200000f5                Enable_Fct_IT_Compare_Match_TIM2_Voie4
-                0x200000f6                Enable_Fct_IT_Compare_Match_TIM3_Voie3
-                0x200000f7                Enable_Fct_IT_Compare_Match_TIM2_Voie2
-                0x200000f8                Enable_Fct_IT_Compare_Match_TIM1_Voie2
-                0x200000f9                Enable_Fct_IT_Compare_Match_TIM4_Voie2
-                0x200000fa                __bss_end__ = .
+ COMMON         0x200000cc        0x8 ./output/s_beaconsignal.o
+                0x200000cc                resolution_pwm4
+                0x200000ce                resolution_pwm2
+                0x200000d0                resolution_pwm3
+                0x200000d2                resolution_pwm1
+ COMMON         0x200000d4       0x10 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+                0x200000d4                Enable_Fct_IT_Compare_Match_TIM3_Voie1
+                0x200000d5                Enable_Fct_IT_Compare_Match_TIM1_Voie3
+                0x200000d6                Enable_Fct_IT_Compare_Match_TIM2_Voie1
+                0x200000d7                Enable_Fct_IT_Compare_Match_TIM4_Voie3
+                0x200000d8                Enable_Fct_IT_Compare_Match_TIM1_Voie1
+                0x200000d9                Enable_Fct_IT_Compare_Match_TIM3_Voie4
+                0x200000da                Enable_Fct_IT_Compare_Match_TIM4_Voie1
+                0x200000db                Enable_Fct_IT_Compare_Match_TIM3_Voie2
+                0x200000dc                Enable_Fct_IT_Compare_Match_TIM2_Voie3
+                0x200000dd                Enable_Fct_IT_Compare_Match_TIM1_Voie4
+                0x200000de                Enable_Fct_IT_Compare_Match_TIM4_Voie4
+                0x200000df                Enable_Fct_IT_Compare_Match_TIM2_Voie4
+                0x200000e0                Enable_Fct_IT_Compare_Match_TIM3_Voie3
+                0x200000e1                Enable_Fct_IT_Compare_Match_TIM2_Voie2
+                0x200000e2                Enable_Fct_IT_Compare_Match_TIM1_Voie2
+                0x200000e3                Enable_Fct_IT_Compare_Match_TIM4_Voie2
+                0x200000e4                __bss_end__ = .
 
-.heap           0x20000100      0x800
-                0x20000100                __end__ = .
-                0x20000100                end = __end__
-                0x20000100                _end = __end__
+.heap           0x200000e8      0x800
+                0x200000e8                __end__ = .
+                0x200000e8                end = __end__
+                0x200000e8                _end = __end__
  *(.heap*)
- .heap          0x20000100      0x800 ./output/startup-gcc.o
-                0x20000100                __HeapBase
-                0x20000900                __HeapLimit = .
+ .heap          0x200000e8      0x800 ./output/startup-gcc.o
+                0x200000e8                __HeapBase
+                0x200008e8                __HeapLimit = .
 
-.stack_dummy    0x20000100      0xc00
+.stack_dummy    0x200000e8      0xc00
  *(.stack)
- .stack         0x20000100      0xc00 ./output/startup-gcc.o
+ .stack         0x200000e8      0xc00 ./output/startup-gcc.o
                 0x20005000                __StackTop = (ORIGIN (RAM) + 0x5000)
                 0x20004400                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
                 0x20005000                PROVIDE (__stack, __StackTop)
@@ -503,63 +472,56 @@ OUTPUT(./output/p_serverBeacons_stm32F103.elf elf32-littlearm)
 .ARM.attributes
                 0x00000000       0x27
  .ARM.attributes
-                0x00000000       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+                0x00000000       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
  .ARM.attributes
-                0x00000019       0x29 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+                0x00000019       0x29 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
  .ARM.attributes
                 0x00000042       0x21 ./output/startup-gcc.o
  .ARM.attributes
                 0x00000063       0x33 ./output/clock.o
  .ARM.attributes
-                0x00000096       0x33 ./output/usart.o
+                0x00000096       0x33 ./output/s_beaconsignal.o
  .ARM.attributes
-                0x000000c9       0x33 ./output/lcd_4bit.o
+                0x000000c9       0x33 ./output/main.o
  .ARM.attributes
-                0x000000fc       0x33 ./output/s_beaconsignal.o
+                0x000000fc       0x33 ./output/emission.o
  .ARM.attributes
-                0x0000012f       0x33 ./output/s_serialcomm.o
+                0x0000012f       0x31 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
  .ARM.attributes
-                0x00000162       0x33 ./output/main.o
+                0x00000160       0x31 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
  .ARM.attributes
-                0x00000195       0x33 ./output/emission.o
+                0x00000191       0x31 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
  .ARM.attributes
-                0x000001c8       0x31 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
+                0x000001c2       0x31 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
  .ARM.attributes
-                0x000001f9       0x31 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
+                0x000001f3       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x0000022a       0x31 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+                0x0000020c       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x0000025b       0x31 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+                0x00000225       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpdf2.o)
  .ARM.attributes
-                0x0000028c       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
+                0x0000023e       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
  .ARM.attributes
-                0x000002a5       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
+                0x00000257       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
  .ARM.attributes
-                0x000002be       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+                0x00000270       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
  .ARM.attributes
-                0x000002d7       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
+                0x00000289       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
  .ARM.attributes
-                0x000002f0       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
+                0x000002a2       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
  .ARM.attributes
-                0x00000309       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
+                0x000002bb       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
  .ARM.attributes
-                0x00000322       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
+                0x000002d4       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
  .ARM.attributes
-                0x0000033b       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
+                0x000002ed       0x29 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
  .ARM.attributes
-                0x00000354       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
- .ARM.attributes
-                0x0000036d       0x29 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
- .ARM.attributes
-                0x00000396       0x19 c:/users/administrateur/desktop/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+                0x00000316       0x19 d:/dossier bureau/cours/5 a/stm32/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
 
 .comment        0x00000000       0xdc
  .comment       0x00000000       0x30 ./output/clock.o
                                  0x31 (size before relaxing)
- .comment       0x00000000       0x31 ./output/usart.o
- .comment       0x00000000       0x31 ./output/lcd_4bit.o
  .comment       0x00000000       0x31 ./output/s_beaconsignal.o
- .comment       0x00000000       0x31 ./output/s_serialcomm.o
  .comment       0x00000000       0x31 ./output/main.o
  .comment       0x00000000       0x31 ./output/emission.o
  .comment       0x00000030       0x2b ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
@@ -567,123 +529,96 @@ OUTPUT(./output/p_serverBeacons_stm32F103.elf elf32-littlearm)
  .comment       0x00000086       0x2b ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
  .comment       0x000000b1       0x2b ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
 
-.debug_line     0x00000000      0xfdf
+.debug_line     0x00000000      0xa2d
  .debug_line    0x00000000       0x91 ./output/startup-gcc.o
- .debug_line    0x00000091      0x147 ./output/clock.o
- .debug_line    0x000001d8      0x1bb ./output/usart.o
- .debug_line    0x00000393      0x1d6 ./output/lcd_4bit.o
- .debug_line    0x00000569      0x1d0 ./output/s_beaconsignal.o
- .debug_line    0x00000739      0x19d ./output/s_serialcomm.o
- .debug_line    0x000008d6      0x13c ./output/main.o
- .debug_line    0x00000a12      0x1cc ./output/emission.o
- .debug_line    0x00000bde       0x97 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
- .debug_line    0x00000c75       0x8e ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
- .debug_line    0x00000d03      0x258 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
- .debug_line    0x00000f5b       0x84 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+ .debug_line    0x00000091      0x154 ./output/clock.o
+ .debug_line    0x000001e5      0x1db ./output/s_beaconsignal.o
+ .debug_line    0x000003c0      0x123 ./output/main.o
+ .debug_line    0x000004e3      0x149 ./output/emission.o
+ .debug_line    0x0000062c       0x97 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
+ .debug_line    0x000006c3       0x8e ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
+ .debug_line    0x00000751      0x258 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+ .debug_line    0x000009a9       0x84 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
 
-.debug_info     0x00000000     0x376d
- .debug_info    0x00000000       0x87 ./output/startup-gcc.o
- .debug_info    0x00000087      0x560 ./output/clock.o
- .debug_info    0x000005e7      0x6b3 ./output/usart.o
- .debug_info    0x00000c9a      0x6af ./output/lcd_4bit.o
- .debug_info    0x00001349      0x7cc ./output/s_beaconsignal.o
- .debug_info    0x00001b15      0x53f ./output/s_serialcomm.o
- .debug_info    0x00002054      0x106 ./output/main.o
- .debug_info    0x0000215a      0x31d ./output/emission.o
- .debug_info    0x00002477      0x271 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
- .debug_info    0x000026e8      0x20a ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
- .debug_info    0x000028f2      0xb45 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
- .debug_info    0x00003437      0x336 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+.debug_info     0x00000000     0x23e6
+ .debug_info    0x00000000       0x84 ./output/startup-gcc.o
+ .debug_info    0x00000084      0x560 ./output/clock.o
+ .debug_info    0x000005e4      0x875 ./output/s_beaconsignal.o
+ .debug_info    0x00000e59       0xe2 ./output/main.o
+ .debug_info    0x00000f3b      0x1b5 ./output/emission.o
+ .debug_info    0x000010f0      0x271 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
+ .debug_info    0x00001361      0x20a ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
+ .debug_info    0x0000156b      0xb45 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+ .debug_info    0x000020b0      0x336 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
 
-.debug_abbrev   0x00000000      0xe70
+.debug_abbrev   0x00000000      0x871
  .debug_abbrev  0x00000000       0x14 ./output/startup-gcc.o
  .debug_abbrev  0x00000014      0x125 ./output/clock.o
- .debug_abbrev  0x00000139      0x228 ./output/usart.o
- .debug_abbrev  0x00000361      0x222 ./output/lcd_4bit.o
- .debug_abbrev  0x00000583      0x164 ./output/s_beaconsignal.o
- .debug_abbrev  0x000006e7      0x17a ./output/s_serialcomm.o
- .debug_abbrev  0x00000861       0xc7 ./output/main.o
- .debug_abbrev  0x00000928      0x1c3 ./output/emission.o
- .debug_abbrev  0x00000aeb       0xf1 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
- .debug_abbrev  0x00000bdc       0xb2 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
- .debug_abbrev  0x00000c8e      0x159 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
- .debug_abbrev  0x00000de7       0x89 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+ .debug_abbrev  0x00000139      0x1bf ./output/s_beaconsignal.o
+ .debug_abbrev  0x000002f8       0x9d ./output/main.o
+ .debug_abbrev  0x00000395      0x157 ./output/emission.o
+ .debug_abbrev  0x000004ec       0xf1 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
+ .debug_abbrev  0x000005dd       0xb2 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
+ .debug_abbrev  0x0000068f      0x159 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+ .debug_abbrev  0x000007e8       0x89 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
 
-.debug_aranges  0x00000000      0x180
+.debug_aranges  0x00000000      0x120
  .debug_aranges
                 0x00000000       0x20 ./output/startup-gcc.o
  .debug_aranges
                 0x00000020       0x20 ./output/clock.o
  .debug_aranges
-                0x00000040       0x20 ./output/usart.o
+                0x00000040       0x20 ./output/s_beaconsignal.o
  .debug_aranges
-                0x00000060       0x20 ./output/lcd_4bit.o
+                0x00000060       0x20 ./output/main.o
  .debug_aranges
-                0x00000080       0x20 ./output/s_beaconsignal.o
+                0x00000080       0x20 ./output/emission.o
  .debug_aranges
-                0x000000a0       0x20 ./output/s_serialcomm.o
+                0x000000a0       0x20 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
  .debug_aranges
-                0x000000c0       0x20 ./output/main.o
+                0x000000c0       0x20 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
  .debug_aranges
-                0x000000e0       0x20 ./output/emission.o
+                0x000000e0       0x20 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
  .debug_aranges
-                0x00000100       0x20 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
- .debug_aranges
-                0x00000120       0x20 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
- .debug_aranges
-                0x00000140       0x20 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
- .debug_aranges
-                0x00000160       0x20 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+                0x00000100       0x20 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
 
-.debug_loc      0x00000000      0xfec
+.debug_loc      0x00000000      0x54f
  .debug_loc     0x00000000       0x21 ./output/clock.o
- .debug_loc     0x00000021      0x502 ./output/usart.o
- .debug_loc     0x00000523      0x3a5 ./output/lcd_4bit.o
- .debug_loc     0x000008c8       0x80 ./output/s_beaconsignal.o
- .debug_loc     0x00000948      0x1a1 ./output/s_serialcomm.o
- .debug_loc     0x00000ae9       0x20 ./output/main.o
- .debug_loc     0x00000b09       0xd3 ./output/emission.o
- .debug_loc     0x00000bdc       0x99 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
- .debug_loc     0x00000c75       0x37 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
- .debug_loc     0x00000cac      0x294 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
- .debug_loc     0x00000f40       0xac ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+ .debug_loc     0x00000021       0x9e ./output/s_beaconsignal.o
+ .debug_loc     0x000000bf       0x20 ./output/main.o
+ .debug_loc     0x000000df       0x60 ./output/emission.o
+ .debug_loc     0x0000013f       0x99 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
+ .debug_loc     0x000001d8       0x37 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
+ .debug_loc     0x0000020f      0x294 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+ .debug_loc     0x000004a3       0xac ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
 
-.debug_str      0x00000000     0x10e5
- .debug_str     0x00000000      0x2d5 ./output/clock.o
-                                0x316 (size before relaxing)
- .debug_str     0x000002d5      0x243 ./output/usart.o
-                                0x40d (size before relaxing)
- .debug_str     0x00000518      0x114 ./output/lcd_4bit.o
-                                0x25b (size before relaxing)
- .debug_str     0x0000062c      0x182 ./output/s_beaconsignal.o
-                                0x3be (size before relaxing)
- .debug_str     0x000007ae       0x9a ./output/s_serialcomm.o
-                                0x29b (size before relaxing)
- .debug_str     0x00000848       0x4e ./output/main.o
-                                0x151 (size before relaxing)
- .debug_str     0x00000896       0xc4 ./output/emission.o
-                                0x2c1 (size before relaxing)
- .debug_str     0x0000095a      0x143 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
+.debug_str      0x00000000      0xcab
+ .debug_str     0x00000000      0x2d0 ./output/clock.o
+                                0x311 (size before relaxing)
+ .debug_str     0x000002d0      0x19e ./output/s_beaconsignal.o
+                                0x3d7 (size before relaxing)
+ .debug_str     0x0000046e       0x4e ./output/main.o
+                                0x13a (size before relaxing)
+ .debug_str     0x000004bc       0x3b ./output/emission.o
+                                0x1e1 (size before relaxing)
+ .debug_str     0x000004f7      0x143 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
                                 0x1cf (size before relaxing)
- .debug_str     0x00000a9d       0x4f ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
+ .debug_str     0x0000063a       0x56 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
                                 0x16d (size before relaxing)
- .debug_str     0x00000aec      0x59c ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+ .debug_str     0x00000690      0x5be ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
                                 0x7fd (size before relaxing)
- .debug_str     0x00001088       0x5d ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+ .debug_str     0x00000c4e       0x5d ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
                                 0x22e (size before relaxing)
 
-.debug_frame    0x00000000      0x680
+.debug_frame    0x00000000      0x424
  .debug_frame   0x00000000       0x70 ./output/clock.o
- .debug_frame   0x00000070       0xd0 ./output/usart.o
- .debug_frame   0x00000140      0x110 ./output/lcd_4bit.o
- .debug_frame   0x00000250       0x80 ./output/s_beaconsignal.o
- .debug_frame   0x000002d0       0x78 ./output/s_serialcomm.o
- .debug_frame   0x00000348       0x28 ./output/main.o
- .debug_frame   0x00000370       0x70 ./output/emission.o
- .debug_frame   0x000003e0       0x68 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
- .debug_frame   0x00000448       0x2c ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
- .debug_frame   0x00000474      0x18c ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
- .debug_frame   0x00000600       0x80 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
+ .debug_frame   0x00000070       0x94 ./output/s_beaconsignal.o
+ .debug_frame   0x00000104       0x28 ./output/main.o
+ .debug_frame   0x0000012c       0x58 ./output/emission.o
+ .debug_frame   0x00000184       0x68 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_systick.o)
+ .debug_frame   0x000001ec       0x2c ../lib\libDrivers_STM32F107_TR_ClockSeb.a(gpio.o)
+ .debug_frame   0x00000218      0x18c ../lib\libDrivers_STM32F107_TR_ClockSeb.a(timer_1234.o)
+ .debug_frame   0x000003a4       0x80 ../lib\libDrivers_STM32F107_TR_ClockSeb.a(passerelle_clock.o)
 
 .debug_pubnames
                 0x00000000      0x499

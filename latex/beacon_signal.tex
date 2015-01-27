@@ -1,0 +1,46 @@
+\hypertarget{beacon_signal_BEACON_SIGNAL_intro}{}\section{Brief}\label{beacon_signal_BEACON_SIGNAL_intro}
+Initializes, configurates and activates timers with P\+W\+M mode.\hypertarget{beacon_signal_BEACON_SIGNAL_reference}{}\section{Module reference}\label{beacon_signal_BEACON_SIGNAL_reference}
+
+\begin{DoxyItemize}
+\item \hyperlink{group__beacon_signal___module}{B\+E\+A\+C\+O\+N\+\_\+\+S\+I\+G\+N\+A\+L}
+\end{DoxyItemize}\hypertarget{beacon_signal_BEACON_SIGNAL_exemples}{}\section{Example}\label{beacon_signal_BEACON_SIGNAL_exemples}
+Example 1\+: Enable the systick interruption
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "\hyperlink{s__beacon_signal_8h}{s\_beaconSignal.h}"}
+
+\textcolor{keywordtype}{void} main (\textcolor{keywordtype}{void})
+\{
+ \hyperlink{group__beacon_signal___function_ga90346dc49f0a8f6eeaaab8a26f3a22b5}{enableSystick}();
+\}
+\end{DoxyCode}
+
+
+Example 2\+: Configuration of the function launched by the systick handler
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{  #include "\hyperlink{s__beacon_signal_8h}{s\_beaconSignal.h}"}
+  
+*\textcolor{keywordtype}{void} \textcolor{keyword}{function} (void)
+ \{
+    \textcolor{keywordtype}{int} i;
+    
+    \textcolor{keywordflow}{while} (i< 1523)
+    \{
+        i++;
+        \}
+ \}
+ 
+  \textcolor{keywordtype}{void} main (\textcolor{keywordtype}{void})
+  \{
+    \hyperlink{group__beacon_signal___function_gacbfa3327cc59cede48c905ac55acebbf}{s\_beaconSignal\_initialization}(\textcolor{keyword}{function});
+ 
+     \textcolor{keywordflow}{while}(1)
+        \{
+        \textcolor{comment}{//......}
+    \}
+ \}
+\end{DoxyCode}
+ 

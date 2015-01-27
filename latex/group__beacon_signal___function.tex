@@ -1,0 +1,138 @@
+\hypertarget{group__beacon_signal___function}{\section{Function}
+\label{group__beacon_signal___function}\index{Function@{Function}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__beacon_signal___function_gacbfa3327cc59cede48c905ac55acebbf}{s\+\_\+beacon\+Signal\+\_\+initialization} (void($\ast$function)(void))
+\begin{DoxyCompactList}\small\item\em Configure all clocks and registers. Initialize all G\+P\+I\+Os and Timers. \end{DoxyCompactList}\item 
+void \hyperlink{group__beacon_signal___function_ga6bf9d61389109b2910e92147c1d90eb6}{s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M} (void)
+\begin{DoxyCompactList}\small\item\em Emission P\+W\+M to every Beacon for a pre-\/defined period of time Mode O\+N on each G\+P\+I\+O (output with P\+W\+M signal) \end{DoxyCompactList}\item 
+void \hyperlink{group__beacon_signal___function_gae20fd0fba90163454d5267b58a9e14bd}{s\+\_\+beacon\+Signal\+\_\+pulse} (void)
+\begin{DoxyCompactList}\small\item\em Beacon\+Signal service in mode P\+U\+L\+S\+E State P\+W\+M in mode P\+U\+L\+S\+E L\+E\+D P\+B11 O\+N. \end{DoxyCompactList}\item 
+void \hyperlink{group__beacon_signal___function_gaaf389a27404471cffbdb1599aec96c73}{s\+\_\+beacon\+Signal\+\_\+zero} (void)
+\begin{DoxyCompactList}\small\item\em beacon\+Signal service in mode Z\+E\+R\+O State P\+W\+M in mode P\+U\+L\+S\+E for next switch L\+E\+D P\+B12 O\+N \end{DoxyCompactList}\item 
+void \hyperlink{group__beacon_signal___function_ga90346dc49f0a8f6eeaaab8a26f3a22b5}{enable\+Systick} ()
+\begin{DoxyCompactList}\small\item\em Enable the systick timer and interruption. \end{DoxyCompactList}\item 
+int \hyperlink{group__beacon_signal___function_ga0718b0d6218cd14a7c5410925ffbbd83}{Get\+State\+Tamp\+Button} ()
+\begin{DoxyCompactList}\small\item\em Notive the user if the \char`\"{}\+Tamp\char`\"{} button is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__beacon_signal___function_ga90346dc49f0a8f6eeaaab8a26f3a22b5}{\index{Function@{Function}!enable\+Systick@{enable\+Systick}}
+\index{enable\+Systick@{enable\+Systick}!Function@{Function}}
+\subsubsection[{enable\+Systick}]{\setlength{\rightskip}{0pt plus 5cm}void enable\+Systick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group__beacon_signal___function_ga90346dc49f0a8f6eeaaab8a26f3a22b5}
+
+
+Enable the systick timer and interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group__beacon_signal___function_ga0718b0d6218cd14a7c5410925ffbbd83}{\index{Function@{Function}!Get\+State\+Tamp\+Button@{Get\+State\+Tamp\+Button}}
+\index{Get\+State\+Tamp\+Button@{Get\+State\+Tamp\+Button}!Function@{Function}}
+\subsubsection[{Get\+State\+Tamp\+Button}]{\setlength{\rightskip}{0pt plus 5cm}int Get\+State\+Tamp\+Button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group__beacon_signal___function_ga0718b0d6218cd14a7c5410925ffbbd83}
+
+
+Notive the user if the \char`\"{}\+Tamp\char`\"{} button is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The state of the \char`\"{}\+Tamp\char`\"{} button -\/0 if tamp is pressed -\/1 it tamp is not pressed 
+\end{DoxyReturn}
+\hypertarget{group__beacon_signal___function_ga6bf9d61389109b2910e92147c1d90eb6}{\index{Function@{Function}!s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M@{s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M}}
+\index{s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M@{s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M}!Function@{Function}}
+\subsubsection[{s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M}]{\setlength{\rightskip}{0pt plus 5cm}void s\+\_\+beacon\+Signal\+\_\+emission\+\_\+\+P\+W\+M (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__beacon_signal___function_ga6bf9d61389109b2910e92147c1d90eb6}
+
+
+Emission P\+W\+M to every Beacon for a pre-\/defined period of time Mode O\+N on each G\+P\+I\+O (output with P\+W\+M signal) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group__beacon_signal___function_gacbfa3327cc59cede48c905ac55acebbf}{\index{Function@{Function}!s\+\_\+beacon\+Signal\+\_\+initialization@{s\+\_\+beacon\+Signal\+\_\+initialization}}
+\index{s\+\_\+beacon\+Signal\+\_\+initialization@{s\+\_\+beacon\+Signal\+\_\+initialization}!Function@{Function}}
+\subsubsection[{s\+\_\+beacon\+Signal\+\_\+initialization}]{\setlength{\rightskip}{0pt plus 5cm}void s\+\_\+beacon\+Signal\+\_\+initialization (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void)}]{function}
+\end{DoxyParamCaption}
+)}}\label{group__beacon_signal___function_gacbfa3327cc59cede48c905ac55acebbf}
+
+
+Configure all clocks and registers. Initialize all G\+P\+I\+Os and Timers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & ($\ast$function) (void), The handler systick will run this function at each systick interruption \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group__beacon_signal___function_gae20fd0fba90163454d5267b58a9e14bd}{\index{Function@{Function}!s\+\_\+beacon\+Signal\+\_\+pulse@{s\+\_\+beacon\+Signal\+\_\+pulse}}
+\index{s\+\_\+beacon\+Signal\+\_\+pulse@{s\+\_\+beacon\+Signal\+\_\+pulse}!Function@{Function}}
+\subsubsection[{s\+\_\+beacon\+Signal\+\_\+pulse}]{\setlength{\rightskip}{0pt plus 5cm}void s\+\_\+beacon\+Signal\+\_\+pulse (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__beacon_signal___function_gae20fd0fba90163454d5267b58a9e14bd}
+
+
+Beacon\+Signal service in mode P\+U\+L\+S\+E State P\+W\+M in mode P\+U\+L\+S\+E L\+E\+D P\+B11 O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{group__beacon_signal___function_gaaf389a27404471cffbdb1599aec96c73}{\index{Function@{Function}!s\+\_\+beacon\+Signal\+\_\+zero@{s\+\_\+beacon\+Signal\+\_\+zero}}
+\index{s\+\_\+beacon\+Signal\+\_\+zero@{s\+\_\+beacon\+Signal\+\_\+zero}!Function@{Function}}
+\subsubsection[{s\+\_\+beacon\+Signal\+\_\+zero}]{\setlength{\rightskip}{0pt plus 5cm}void s\+\_\+beacon\+Signal\+\_\+zero (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__beacon_signal___function_gaaf389a27404471cffbdb1599aec96c73}
+
+
+beacon\+Signal service in mode Z\+E\+R\+O State P\+W\+M in mode P\+U\+L\+S\+E for next switch L\+E\+D P\+B12 O\+N 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

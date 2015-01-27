@@ -344,21 +344,6 @@
               <FileType>1</FileType>
               <FilePath>..\src\drivers\clock.c</FilePath>
             </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\drivers\usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>LCD.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\include\drivers\LCD.h</FilePath>
-            </File>
-            <File>
-              <FileName>LCD_4bit.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\drivers\LCD_4bit.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -368,11 +353,6 @@
               <FileName>s_beaconSignal.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\services\s_beaconSignal.c</FilePath>
-            </File>
-            <File>
-              <FileName>s_serialComm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\services\s_serialComm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -673,7 +653,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\include\drivers;..\include\services;..\include\applications;..\src\drivers;..\src\services;..\src\applications;..\system\stm32f103;..\system</IncludePath>
+              <IncludePath>..\include\drivers;..\include\applications;..\src\drivers;..\src\services;..\src\applications;..\system\stm32f103;..\system</IncludePath>
             </VariousControls>
           </Carm>
           <Aarm>
@@ -741,21 +721,6 @@
               <FileType>1</FileType>
               <FilePath>..\src\drivers\clock.c</FilePath>
             </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\drivers\usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>LCD.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\include\drivers\LCD.h</FilePath>
-            </File>
-            <File>
-              <FileName>LCD_4bit.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\drivers\LCD_4bit.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -765,11 +730,6 @@
               <FileName>s_beaconSignal.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\services\s_beaconSignal.c</FilePath>
-            </File>
-            <File>
-              <FileName>s_serialComm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\services\s_serialComm.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,0 +1,63 @@
+\hypertarget{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_BEACON_SIGNAL_intro}{}\section{Brief B\+E\+A\+C\+O\+N\+\_\+\+S\+I\+G\+N\+A\+L}\label{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_BEACON_SIGNAL_intro}
+Initialize, configurate and activate timers with P\+W\+M mode.\hypertarget{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_BEACON_SIGNAL_reference}{}\section{Module reference}\label{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_BEACON_SIGNAL_reference}
+
+\begin{DoxyItemize}
+\item \hyperlink{group__beacon_signal___module}{B\+E\+A\+C\+O\+N\+\_\+\+S\+I\+G\+N\+A\+L}
+\end{DoxyItemize}\hypertarget{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_BEACON_SIGNAL_exemples}{}\section{Example}\label{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_BEACON_SIGNAL_exemples}
+Example 1\+: Enable the systick interruption
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "\hyperlink{s__beacon_signal_8h}{s\_beaconSignal.h}"}
+
+\textcolor{keywordtype}{void} main (\textcolor{keywordtype}{void})
+\{
+ \hyperlink{group__beacon_signal___function_ga90346dc49f0a8f6eeaaab8a26f3a22b5}{enableSystick}();
+\}
+\end{DoxyCode}
+
+
+Example 2\+: Configuration of the function launched by the systick handler
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{  #include "\hyperlink{s__beacon_signal_8h}{s\_beaconSignal.h}"}
+  
+*\textcolor{keywordtype}{void} \textcolor{keyword}{function} (void)
+ \{
+    \textcolor{keywordtype}{int} i;
+    
+    \textcolor{keywordflow}{while} (i< 1523)
+    \{
+        i++;
+        \}
+ \}
+ 
+  \textcolor{keywordtype}{void} main (\textcolor{keywordtype}{void})
+  \{
+    \hyperlink{group__beacon_signal___function_gacbfa3327cc59cede48c905ac55acebbf}{s\_beaconSignal\_initialization}(\textcolor{keyword}{function});
+ 
+     \textcolor{keywordflow}{while}(1)
+        \{
+        \textcolor{comment}{//......}
+    \}
+ \}
+\end{DoxyCode}
+\hypertarget{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_EMISSION_intro}{}\section{Brief E\+M\+I\+S\+S\+I\+O\+N\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N}\label{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_EMISSION_intro}
+This application provides functions to initialize and configure the periodic emission of the four transducers.\hypertarget{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_EMISSION_reference}{}\section{Module reference}\label{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_EMISSION_reference}
+
+\begin{DoxyItemize}
+\item \hyperlink{group___emission___module}{E\+M\+I\+S\+S\+I\+O\+N}
+\end{DoxyItemize}\hypertarget{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_EMISSION_exemples}{}\section{Example}\label{_s_t_m32__s_i_g_n_a_l__e_m_i_s_s_i_o_n_EMISSION_exemples}
+Example 1\+: Initialize the emission
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "\hyperlink{_emission_8h}{Emission.h}"}
+
+\textcolor{keywordtype}{void} main (\textcolor{keywordtype}{void})
+\{
+ \hyperlink{group___emission___function_ga0286d33091b7353c6f70cbc413767cfc}{app\_initialization}();
+\}
+\end{DoxyCode}
+ 
